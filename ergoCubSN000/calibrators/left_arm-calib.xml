@@ -30,7 +30,7 @@
 	</group>
 
 	<!-- motor's encoder of joint 7 can't read -->
-	<param name="CALIB_ORDER"> (4 5 6) (3) (2) (0) (1) (7 8 9 10) (11 12) </param> 
+	<param name="CALIB_ORDER"> (3) (2) (0) (1) (7 8 10) (11 12) </param>
 
 	<action phase="startup" level="10" type="calibrate">
 		<param name="target">left_arm-mc_remapper</param>
@@ -43,6 +43,3 @@
 	<action phase="interrupt3" level="1" type="abort" />
 
 </device>
-
-
-
